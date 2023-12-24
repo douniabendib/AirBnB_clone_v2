@@ -2,6 +2,7 @@
 """
 scrpit for start flask application
 """
+
 from flask import Flask
 app = Flask(__name__)
 
@@ -23,5 +24,5 @@ def c_index(text):
     """return c plus text"""
     return f"C {text.replace('_', ' ')}"
 
-if __name__=='__main__':
+if __name__== '__main__':
     app.run(host='0.0.0.0', port=5000)
