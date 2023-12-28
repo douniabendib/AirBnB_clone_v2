@@ -50,8 +50,8 @@ def add_even(n):
         even_odd = 'even'
     else:
         even_odd = 'odd'
-    return render_template('6-number_odd_or_even.html', n=n,
-                            even_odd = even_odd)
+    return render_template('6-number_odd_or_even.html', n=n, 
+            even_odd = even_odd)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
